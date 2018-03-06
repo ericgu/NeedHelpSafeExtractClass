@@ -9,7 +9,7 @@ namespace FeedChecker
 {
     public class Parser
     {
-        public static IEnumerable<string> GetAllCoreFxPreview1(string feed, Parser that)
+        public IEnumerable<string> GetAllCoreFxPreview1(string feed)
         {
             if (!feed.EndsWith("/"))
                 feed = feed + "/";
