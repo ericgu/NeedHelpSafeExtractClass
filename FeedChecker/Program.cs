@@ -11,7 +11,7 @@ namespace FeedChecker
     {
         public static void Main(string[] args)
         {
-            foreach (var l in Parser.GetAllCoreFxPreview1("http://apt-mo.trafficmanager.net/repos/dotnet/dists/jessie"))
+            foreach (var l in Parser.GetAllCoreFxPreview1("http://apt-mo.trafficmanager.net/repos/dotnet/dists/jessie", new Parser()))
                 Console.WriteLine(l);
         }
     }
